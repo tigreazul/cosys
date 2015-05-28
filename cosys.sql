@@ -1,0 +1,272 @@
+-- phpMyAdmin SQL Dump
+-- version 4.2.7.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 29-05-2015 a las 00:18:25
+-- Versión del servidor: 5.6.20
+-- Versión de PHP: 5.5.15
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Base de datos: `cosys`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `co_comprobante_pago`
+--
+
+CREATE TABLE IF NOT EXISTS `co_comprobante_pago` (
+`cpago_id` int(11) NOT NULL,
+  `cpago_descripcion` text,
+  `cpago_estado` int(11) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=49 ;
+
+--
+-- Volcado de datos para la tabla `co_comprobante_pago`
+--
+
+INSERT INTO `co_comprobante_pago` (`cpago_id`, `cpago_descripcion`, `cpago_estado`) VALUES
+(1, 'OTROS (ESPECIFICAR)', 1),
+(2, 'FACTURA', 1),
+(3, 'RECIBO POR HONORARIO', 1),
+(4, 'BELETA DE VENTA', 1),
+(5, 'LIQUIDACIÓN DE COMPRA', 1),
+(6, 'BOLETO DE COMPAÑÍA DE AVIACIÓN COMERCIAL POR EL ERVICIO DE TRANSPORTE AÉREO DE PASAJEROS', 1),
+(7, 'CARTA DE PORTE AÉREO POR EL SERVICIO DE TRANSPORTE DE CARGA AÉREA', 1),
+(8, 'NOTA DE CRÉDITO', 1),
+(9, 'NOTA DE DÉBITO', 1),
+(10, 'GUÑIA DE REMISIÑON - REMITENTE', 1),
+(11, 'RECIBO POR ARRENTAMIENTO', 1),
+(12, 'PÓLIZA EMITIDA POR LAS BOLSAS DE VALORES, BOLSAS DE PRODUCTOS O AGENTES DE INTERMEDIACIÓN POR OPERACIONES REALIZADAS EN LAS BOLSAS DE VALORES O PRODUCTOS O FUERA DE LAS MISMAS, AUTORIZADAS POR CONASEV', 1),
+(13, 'TICKET O CINTA EMITIDO POR MÁQUINA REGISTRADORA', 1),
+(14, 'DOCUMENTOS EMITIDO POR BANCOS, INSTITUCIONES FINANCIERAS, CREDITICIAS Y SEGUROS QUE SE ENCUENTREN BAJO EL CONTROL DE LA SUPERINTENDENCIA DE BANCA Y SEGUROS', 1),
+(15, 'RECIBO POR SERVICIOS PÚBLICOS DE SUMINISTRO DE ENERGÍA ELÉCTRICA, AGUA, TELÉFONO,TELEX Y TELEGRÁFICO Y OTROS SERVICIOS COMPLEMENTARIOS QUE SE INCLUYAN EN EL RECIBO DE SERVICIO PÚBLICO', 1),
+(16, 'BOLETO EMITIDO POR LAS EMPRESAS DE TRANSPORTE PÚBLICO URBANO DE PASAJEROS', 1),
+(17, 'BOLETO DE VIAJE EMITIDO POR LAS EMPRESAS DE TRANSPORTE PÚBLICO INTERPROVINCIAL DE PASAJEROS DEL PAÍS', 1),
+(18, 'DOCUMENTO EMITIDO POR LA IGLESIA CATÓLICA POR EL ARRENDAMIENTO DE BIENES INMUEBLES', 1),
+(19, 'DOCUMENTO EMITIDO POR LAS ADMINISTRADOREAS PRIVADAS DE FONDO DE PENSIONES QUE SE ENCUENTRAN BAJO LA SUPERVISIÓN DE LA SUPERINTENDENCIA DE ADMINISTRADORAS PRIVADAS DE FONDOS DE PENSIONES', 1),
+(20, 'BOLETO O ENTRADA POR ATRACCIONES Y ESPECTÁCULOS PÚBLICOS', 1),
+(21, 'COMPROBANTE DE RETENCIÓN', 1),
+(22, 'CONOCIMIENTO DE EMBARQUE POR EL SERVICIO DE TRANSPORTE DE CARGA MARÍTIMA', 1),
+(23, 'COMPROBANTE POR OPERACIONES NO HABITUALES', 1),
+(24, 'PÓLIZAS DE ADJUDICACIÓN EMITIDAS CON OCASIÓN DEL REMATE O ADJUDICACIÓN DE BIENES POR VENTA FORZADA, POR LOS MARTILLEROS O LAS ENTIDADES QUE REMATEN O SUBASTEN BIENES POR CUENTA DE TERCEROS', 1),
+(25, 'CERTIFICADO DE PAGO DE REGALÍAS EMITIDAS POR PERUPETRO S.A.', 1),
+(26, 'DOCUMENTO DE ATRIBUCIÓN (LEY DEL IMPUESTO GENERAL A LA VENTA E IMPUESTO SELECTIVO AL CONSUMO, ART. 19º, ÚLTIMO PÁRRAFO, R.S. Nº 022-98-SUNAT).', 1),
+(27, 'RECIBO POR EL PAGO DE LA TARIFA POR USO DE AGUA SUPERFICIAL CON FINES AGRARIOS Y POR EL PAGO DE LA CUOTA PARA LA EJECUCIÓN DE UNA DETERMINADA OBRA O ACTIVIDAD ACORDADA POR LA ASAMBLEA GENERAL DE LA COMISIÍN DE REGANTES O RESOLUCIÓN EXPEDIDA POR EL JEFE DE LA UNIDAD DE AGUAS Y RIEGO (DECRETO SUPREMO Nº 003-90-AG, ARTS. 28 Y 48)', 1),
+(28, 'SEGURO COMPLEMENTARIO DE TRABAJO DE RIESGO', 1),
+(29, 'TARIFA UNIFICADA DE USO DE AEROPUERTO', 1),
+(30, 'DOCUMENTOS EMITIDOS POR LA COFOPRI EN CALIDAD DE OFERTA DE VENTA DE TERRENOS, LOS CORRESPONDIENTES A LAS SUBASTAS PÚBLICAS Y A LA RETRIBUCIÓN DE LOS SERVICIOS QUE PRESTA', 1),
+(31, 'DOCUMENTOS EMITIDOS POR LAS EMPRESAS QUE DESEMPEÑAN EL ROL ADQUIRIENTE EN LOS SISTEMAS DE PAGO MEDIANTE TARJETAS DE CRÉDITO Y DÉBITO', 1),
+(32, 'GUÍA DE REMISIÓN - TRANSPORTISTA', 1),
+(33, 'DOCUMENTOS EMITIDOS POR LAS EMPRESAS RECAUDADORAS DE LA DENOMINADA GARNTÍA DE RED PRINCIPAL A LA QUE HACE REFERENCIA EL NUMERAL 7.6 DEL ARTÍCULO 7ª DE LA LEY N!27133 - LEY DE PROMICIÓN DEL DESARROLLO DE LA INDUSTRIA DEL GAS NATURAL', 1),
+(34, 'DOCUMENTO DEL OPERADOR', 1),
+(35, 'DOCUMENTO DEL PARTÍCIPE', 1),
+(36, 'RECIBO DE DISTRIBUCIÓN DE GAS NATURAL', 1),
+(37, 'DOCUMENTOS QUE EMITAN LOS CONCESIONARIOS DEL SERVICIO DE REVISIONES TÉCNICAS VIHICULARES, POR LA PRESTACIÓN DE DICHO SERVICIO', 1),
+(38, 'DECLARACIÓN ÚNICA DE ADUANAS - IMPORTACION DEFINITIVA', 1),
+(39, 'DESPACHO SIMPLIFICADO - IMPORTACIÓN SIMPLIFICADA', 1),
+(40, 'DECLARACIÓN DE MENSAJERÍA O COURIER', 1),
+(41, 'LIQUIDACIÓN DE COBRANZA', 1),
+(42, 'NOTA DE CRÉDITO ESPECIAL ', 1),
+(43, 'NOTA DE DÉBITO ESPECIAL', 1),
+(44, 'COMPROBANTE DE NO DOMICIALDO', 1),
+(45, 'EZCESO DE CRÉDITO FISCAL POR RETIRO DE BIENES', 1),
+(46, 'NOTA DECRÉDITO FISCAL POR RETIRO DE BIENES', 1),
+(47, 'NOTA DE CRÉDITO - NO DOMICILIADO', 1),
+(48, 'OTROS - CONSOLIDADO DE BOLETAS DE VENTA', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `co_existencia`
+--
+
+CREATE TABLE IF NOT EXISTS `co_existencia` (
+`exis_id` int(11) NOT NULL,
+  `exis_descripcion` varchar(100) DEFAULT NULL,
+  `exis_estado` int(11) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
+
+--
+-- Volcado de datos para la tabla `co_existencia`
+--
+
+INSERT INTO `co_existencia` (`exis_id`, `exis_descripcion`, `exis_estado`) VALUES
+(1, 'MERCADERÍA', 1),
+(2, 'PRODUCTO TERMINADO', 1),
+(3, 'MATERIAS PRIMAS Y AUXILIARES - MATERIALES', 1),
+(4, 'ENVASES Y EMBALAJES', 1),
+(5, 'SUMINISTROS DIVERSOS', 1),
+(6, 'OTROS (ESPECIFICAR)', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `co_tipo_operacion`
+--
+
+CREATE TABLE IF NOT EXISTS `co_tipo_operacion` (
+`ope_id` int(11) NOT NULL,
+  `ope_descripcion` text,
+  `ope_estado` int(11) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=18 ;
+
+--
+-- Volcado de datos para la tabla `co_tipo_operacion`
+--
+
+INSERT INTO `co_tipo_operacion` (`ope_id`, `ope_descripcion`, `ope_estado`) VALUES
+(1, 'VENTA', 1),
+(2, 'COMPRA', 1),
+(3, 'CONSIGNACIÓN RECIBIDA', 1),
+(4, 'CONSIGNACIÓN ENTREGADA', 1),
+(5, 'DEVOLUCIÓN RECIBIDA', 1),
+(6, 'DEVOLUCIÓN ENTREGADA', 1),
+(7, 'PROMOCIÓN', 1),
+(8, 'PREMIO', 1),
+(9, 'DONACIÓN', 1),
+(10, 'SALIDA A PRODUCCIÓN', 1),
+(11, 'TRANSFERENCIA ENTRE ALMACENES', 1),
+(12, 'RETIRO', 1),
+(13, 'MERMAS', 1),
+(14, 'DESMEDROS', 1),
+(15, 'DESTRUCCIÓN', 1),
+(16, 'SALDO INICIAL', 1),
+(17, 'OTROS (ESPECIFICAR)', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `co_unidad_medida`
+--
+
+CREATE TABLE IF NOT EXISTS `co_unidad_medida` (
+`unid_id` int(11) NOT NULL,
+  `unid_descripcion` varchar(100) DEFAULT NULL,
+  `unid_estado` int(11) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=17 ;
+
+--
+-- Volcado de datos para la tabla `co_unidad_medida`
+--
+
+INSERT INTO `co_unidad_medida` (`unid_id`, `unid_descripcion`, `unid_estado`) VALUES
+(1, 'KILOGRAMOS', 1),
+(2, 'LIBRAS', 1),
+(3, 'TONELADAS LARGAS', 1),
+(4, 'TONELADAS MÉTRICAS', 1),
+(5, 'TONELADAS CORTAS', 1),
+(6, 'GRAMOS', 1),
+(7, 'UNIDADES', 1),
+(8, 'LITROS', 1),
+(9, 'GALONES', 1),
+(10, 'BARRILES', 1),
+(11, 'LATAS', 1),
+(12, 'CAJAS', 1),
+(13, 'MILLARES', 1),
+(14, 'METROS CÚBICOS', 1),
+(15, 'METROS', 1),
+(16, 'OTROS(ESPECIFICAR)', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `users`
+--
+
+CREATE TABLE IF NOT EXISTS `users` (
+`id` int(11) NOT NULL,
+  `perfil` varchar(30) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `username` varchar(100) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `password` varchar(100) CHARACTER SET utf8 COLLATE utf8_spanish_ci NOT NULL,
+  `nombre` varchar(100) DEFAULT NULL,
+  `descripcion` varchar(200) DEFAULT NULL,
+  `estado` int(11) DEFAULT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Volcado de datos para la tabla `users`
+--
+
+INSERT INTO `users` (`id`, `perfil`, `username`, `password`, `nombre`, `descripcion`, `estado`) VALUES
+(1, 'administracion', 'administracion', '6e80dd213abf53872bbdd80734646d775a63c75f', 'Jose', NULL, 1),
+(2, 'kardex', 'kardex', 'b6bc400c6fad38645fb5062e88ee0efe9f305c2c', 'lucas', NULL, 1),
+(3, 'produccion', 'produccion', '67bf5517b4affade1a51066c4aec5532658c3b8a', 'panfleta', NULL, 1);
+
+--
+-- Índices para tablas volcadas
+--
+
+--
+-- Indices de la tabla `co_comprobante_pago`
+--
+ALTER TABLE `co_comprobante_pago`
+ ADD PRIMARY KEY (`cpago_id`);
+
+--
+-- Indices de la tabla `co_existencia`
+--
+ALTER TABLE `co_existencia`
+ ADD PRIMARY KEY (`exis_id`);
+
+--
+-- Indices de la tabla `co_tipo_operacion`
+--
+ALTER TABLE `co_tipo_operacion`
+ ADD PRIMARY KEY (`ope_id`);
+
+--
+-- Indices de la tabla `co_unidad_medida`
+--
+ALTER TABLE `co_unidad_medida`
+ ADD PRIMARY KEY (`unid_id`);
+
+--
+-- Indices de la tabla `users`
+--
+ALTER TABLE `users`
+ ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT de las tablas volcadas
+--
+
+--
+-- AUTO_INCREMENT de la tabla `co_comprobante_pago`
+--
+ALTER TABLE `co_comprobante_pago`
+MODIFY `cpago_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=49;
+--
+-- AUTO_INCREMENT de la tabla `co_existencia`
+--
+ALTER TABLE `co_existencia`
+MODIFY `exis_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
+-- AUTO_INCREMENT de la tabla `co_tipo_operacion`
+--
+ALTER TABLE `co_tipo_operacion`
+MODIFY `ope_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=18;
+--
+-- AUTO_INCREMENT de la tabla `co_unidad_medida`
+--
+ALTER TABLE `co_unidad_medida`
+MODIFY `unid_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=17;
+--
+-- AUTO_INCREMENT de la tabla `users`
+--
+ALTER TABLE `users`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
