@@ -1,11 +1,9 @@
 cosis/
 framework/
-<<<<<<< HEAD
-*~
-=======
-*~
-.DS_Store
+.htaccess
 
+.DS_Store
+application/config/database.php
 application/cache/*
 !application/cache/index.html
 !application/cache/.htaccess
@@ -13,5 +11,3 @@ application/cache/*
 application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
-
->>>>>>> 7f2d63b0444985f8014090fe20f8bb50af0d4dc4

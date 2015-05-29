@@ -15,13 +15,13 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,300">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/skin/default_skin/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/skin/default_skin/css/theme.css">
 
     <!-- Admin Forms CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/admin-tools/admin-forms/css/admin-forms.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/admin-tools/admin-forms/css/admin-forms.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo base_url() ?>assets/img/favicon.ico">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -62,68 +62,17 @@
 
                         <div class="col-xs-6 va-m pln">
                             <a href="dashboard.html" title="Return to Dashboard">
-                                <img src="assets/img/logos/logo_white.png" title="AdminDesigns Logo" class="img-responsive w250">
+                                <img src="<?php echo base_url() ?>assets/img/logos/logo_white.png" title="AdminDesigns Logo" class="img-responsive w250">
                             </a>
                         </div>
-
-<!--                         <div class="col-xs-6 text-right va-b pr5">
-                            <div class="login-links">
-                                <a href="pages_login.html" class="active" title="Sign In">Sign In</a>
-                                <span class="text-white"> | </span>
-                                <a href="pages_register.html" class="" title="Register">Register</a>
-                            </div>
-
-                        </div> -->
-
                     </div>
 
                     <div class="panel panel-info mt10 br-n">
-<!-- 
-                        <div class="panel-heading heading-border bg-white">
-                            <span class="panel-title hidden"><i class="fa fa-sign-in"></i>Register</span>
-                            <div class="section row mn">
-                                <div class="col-sm-4">
-                                    <a href="#" class="button btn-social facebook span-left mr5 btn-block">
-                                        <span><i class="fa fa-facebook"></i>
-                                        </span>Facebook</a>
-                                </div>
-                                <div class="col-sm-4">
-                                    <a href="#" class="button btn-social twitter span-left mr5 btn-block">
-                                        <span><i class="fa fa-twitter"></i>
-                                        </span>Twitter</a>
-                                </div>
-                                <div class="col-sm-4">
-                                    <a href="#" class="button btn-social googleplus span-left btn-block">
-                                        <span><i class="fa fa-google-plus"></i>
-                                        </span>Google+</a>
-                                </div>
-                            </div>
-                        </div> -->
-
                         <!-- end .form-header section -->
                         <form method="post" action= <?php echo base_url()."c_login/new_user"; ?>  id="contact">
                             <div class="panel-body bg-light p30">
                                 <div class="row">
-                                    <div class="col-sm-7 pr30">
-
-<!--                                         <div class="section row hidden">
-                                            <div class="col-md-4">
-                                                <a href="#" class="button btn-social facebook span-left mr5 btn-block">
-                                                    <span><i class="fa fa-facebook"></i>
-                                                    </span>Facebook</a>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <a href="#" class="button btn-social twitter span-left mr5 btn-block">
-                                                    <span><i class="fa fa-twitter"></i>
-                                                    </span>Twitter</a>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <a href="#" class="button btn-social googleplus span-left btn-block">
-                                                    <span><i class="fa fa-google-plus"></i>
-                                                    </span>Google+</a>
-                                            </div>
-                                        </div> -->
-
+                                    <div class="col-sm-12 pr30">
                                         <div class="section">
                                             <label for="username" class="field-label text-muted fs18 mb10">Usuario</label>
                                             <label for="username" class="field prepend-icon">
@@ -145,17 +94,6 @@
                                         <!-- end section -->
                                         <input type="hidden" name="token" value="<?=$token?>">
                                     </div>
-<!--                                     <div class="col-sm-5 br-l br-grey pl30">
-                                        <h3 class="mb25"> You'll Have Access To Your:</h3>
-                                        <p class="mb15">
-                                            <span class="fa fa-check text-success pr5"></span> Unlimited Email Storage</p>
-                                        <p class="mb15">
-                                            <span class="fa fa-check text-success pr5"></span> Unlimited Photo Sharing/Storage</p>
-                                        <p class="mb15">
-                                            <span class="fa fa-check text-success pr5"></span> Unlimited Downloads</p>
-                                        <p class="mb15">
-                                            <span class="fa fa-check text-success pr5"></span> Unlimited Service Tickets</p>
-                                    </div> -->
                                 </div>
                             </div>
                             <!-- end .form-body section -->
@@ -195,22 +133,22 @@
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
 
     <!-- jQuery -->
-    <script type="text/javascript" src="vendor/jquery/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>vendor/jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>vendor/jquery/jquery_ui/jquery-ui.min.js"></script>
 
     <!-- Bootstrap -->
-    <script type="text/javascript" src="assets/js/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/js/bootstrap/bootstrap.min.js"></script>
 
     <!-- Page Plugins -->
-    <script type="text/javascript" src="assets/js/pages/login/EasePack.min.js"></script>
-    <script type="text/javascript" src="assets/js/pages/login/rAF.js"></script>
-    <script type="text/javascript" src="assets/js/pages/login/TweenLite.min.js"></script>
-    <script type="text/javascript" src="assets/js/pages/login/login.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/js/pages/login/EasePack.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/js/pages/login/rAF.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/js/pages/login/TweenLite.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/js/pages/login/login.js"></script>
 
     <!-- Theme Javascript -->
-    <script type="text/javascript" src="assets/js/utility/utility.js"></script>
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <script type="text/javascript" src="assets/js/demo.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/js/utility/utility.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/js/main.js"></script>
+    <script type="text/javascript" src="<?php echo base_url() ?>assets/js/demo.js"></script>
 
     <!-- Page Javascript -->
     <script type="text/javascript">
