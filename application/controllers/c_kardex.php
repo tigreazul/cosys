@@ -18,6 +18,6 @@ class C_kardex extends CI_Controller {
 			redirect(base_url().'c_login');
 		}
 		$data['titulo'] = 'Bienvenido kardex';
-		$this->load->view('v_kardex',$data);
+		$this->load->view('v_dashboard',$data);
 	}
 }
