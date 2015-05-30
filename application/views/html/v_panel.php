@@ -24,26 +24,40 @@
                         </a>
                         <ul class="nav sub-nav">
                             <li>
-                                <a href="admin_plugins-panels.html">
+                                <a href="<?php echo base_url() ?>c_kardex/in">
                                     <span class="glyphicons glyphicons-book"></span> Ingreso </a>
                             </li>
                             <li>
-                                <a href="admin_plugins-modals.html">
+                                <a href="<?php echo base_url() ?>c_kardex/out">
                                     <span class="glyphicons glyphicons-show_big_thumbnails"></span> Salida</a>
                             </li>
                             <li>
-                                <a href="admin_plugins-dock.html">
-                                    <span class="glyphicons glyphicons-sampler"></span> Detalles </a>
-                            </li>
+                                <a class="accordion-toggle" href="#">
+                                    <span class="glyphicons glyphicons-fire"></span>
+                                    <span class="sidebar-title">Detalles</span>
+                                    <span class="caret"></span>
+                                </a>
+                            
+                                <ul class="nav sub-nav">
+                                    <li>
+                                        <a href="<?php echo base_url() ?>c_kardex/indet">
+                                            <span class="glyphicons glyphicons-sampler"></span> Ingreso </a>
+                                    </li>
+                                    <li>
+                                        <a href="<?php echo base_url() ?>c_kardex/outdet">
+                                            <span class="glyphicons glyphicons-sampler"></span> Salida </a>
+                                    </li>
+                                </ul>
+                            </li>    
                         </ul>
                     </li>
                     <li>
-                        <a class="accordion-toggle" href="#">
+                        <a href="<?php echo base_url() ?>c_produccion">
                             <span class="glyphicons glyphicons-cup"></span>
-                            <span class="sidebar-title">Producción</span>
-                            <span class="caret"></span>
+                            Producción
+                            
                         </a>
-                        <ul class="nav sub-nav">
+<!--                         <ul class="nav sub-nav">
                             <li>
                                 <a href="admin_forms-elements.html">
                                     <span class="glyphicons glyphicons-edit"></span> Admin Elements </a>
@@ -60,7 +74,7 @@
                                 <a href="admin_forms-wizard.html">
                                     <span class="glyphicons glyphicons-magic"></span> Admin Wizard </a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </li>
                     <li>
                         <a class="accordion-toggle" href="#">

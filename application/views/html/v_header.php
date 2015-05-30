@@ -16,7 +16,7 @@
             <ul class="nav navbar-nav navbar-right">
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle fw600 p15" data-toggle="dropdown"> <img src="assets/img/avatars/5.jpg" alt="avatar" class="mw30 br64 mr15">
+                    <a href="#" class="dropdown-toggle fw600 p15" data-toggle="dropdown"> <img src="<?php echo base_url() ?>assets/img/avatars/5.jpg" alt="avatar" class="mw30 br64 mr15">
                         <span>John.Smith</span>
                         <span class="caret caret-tp"></span>
                     </a>

@@ -13,11 +13,12 @@ class C_produccion extends CI_Controller {
 	
 	public function index()
 	{
-		if($this->session->userdata('perfil') == FALSE || $this->session->userdata('perfil') != 'administrador')
+		if($this->session->userdata('perfil') == FALSE || $this->session->userdata('perfil') != 'produccion')
 		{
 			redirect(base_url().'c_login');
 		}
 		$data['titulo'] = 'Bienvenido produccion';
 		$this->load->view('v_produccion',$data);
 	}
+
 }
