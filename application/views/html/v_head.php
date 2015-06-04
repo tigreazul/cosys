@@ -15,16 +15,16 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
 
     <!-- Theme CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/skin/default_skin/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/skin/default_skin/css/theme.css">
 
     <!-- Admin Panels CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/admin-tools/admin-plugins/admin-panels/adminpanels.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/admin-tools/admin-plugins/admin-panels/adminpanels.css">
 
     <!-- Admin Forms CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/admin-tools/admin-forms/css/admin-forms.css">
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/admin-tools/admin-forms/css/admin-forms.css">
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo base_url() ?>assets/img/favicon.ico">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
