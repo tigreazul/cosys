@@ -49,7 +49,8 @@ class C_login extends CI_Controller {
 	            
 				if($this->form_validation->run() == FALSE)
 				{
-					$this->index();
+					 $this->index();
+					//echo 'a';
 				}else{
 					$username = $this->input->post('username');
 					$password = sha1($this->input->post('password'));

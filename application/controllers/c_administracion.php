@@ -15,7 +15,7 @@ class C_administracion extends CI_Controller {
 	{
 		if($this->session->userdata('perfil') == FALSE || $this->session->userdata('perfil') != 'administrador')
 		{
-			redirect(base_url().'c_login');
+			//redirect(base_url().'c_login');
 		}
 		$data['titulo'] = 'Bienvenido Administrador';
 		$this->load->view('v_administracion',$data);

@@ -8,22 +8,22 @@
 var Demo = function() {
 
    // // Demo AdminForm Functions
-   var runDemoForms = function() {
+   // var runDemoForms = function() {
 
-      // Prevents directory response when submitting a demo form
-      $('.admin-form').on('submit', function(e) {
+   //    // Prevents directory response when submitting a demo form
+   //    $('.admin-form').on('submit', function(e) {
 
-         if($('body.timeline-page').length) {
-            return;
-         }
+   //       if($('body.timeline-page').length) {
+   //          return;
+   //       }
 
-         e.preventDefault;
-         alert('Your form has submitted!');
-         return false;
+   //       e.preventDefault;
+   //       alert('Your form has submitted!');
+   //       return false;
 
-      });
+   //    });
 
-   }
+   // }
 
    // Demo Header Functions
    var runDemoTopbar = function() {
@@ -485,7 +485,7 @@ var Demo = function() {
 
    return {
       init: function() {
-         runDemoForms();
+         //runDemoForms();
          runDemoTopbar();
          runDemoSettings();
          runDemoCache();
